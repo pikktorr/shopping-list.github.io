@@ -1,0 +1,131 @@
+html,
+body {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+  margin: 20px 0px;
+  padding: 20px;
+  border: rgba(0, 0, 0, .1);
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px 1px #e6e6e6;
+  color: white;
+  font-weight: bolder;
+  background-color: rgba(0, 140, 140, 0.4);
+}
+
+.search {
+  display: grid;
+  grid-template-columns: 300px 80px;
+  justify-content: center;
+  padding: 0px;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  font-size: 1.5em;
+  font-weight: 100;
+  color: rgb(92, 92, 92);
+
+}
+
+#addButton {
+  background-color: rgba(0, 140, 140, 0.4);
+  border: 1px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 1.2em;
+  color: white;
+}
+
+#addItemField {
+  border: 1px solid rgba(0, 140, 140, 0.4);
+  padding: 5px;
+  margin-bottom: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: darkslategray;
+  font-size: 1.2em;
+  text-align: center;
+
+}
+
+::placeholder {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(155, 155, 155);
+  text-align: center;
+}
+
+h3 {
+  color: white;
+  margin: 0;
+  font-size: 2em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+p {
+  margin: 0;
+  font-weight: 200;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 400px;
+  justify-content: center;
+  padding: 0;
+  margin-top: 17px;
+}
+
+li {
+  display: grid;
+  grid-template-columns: auto 30px;
+  justify-items: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 2px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: rgb(92, 92, 92);
+}
+
+.done {
+  text-decoration: line-through;
+  text-decoration-color: rgb(173, 173, 173);
+  font-style: italic;
+  color: gray;
+}
+
+
+@media only screen and (max-width: 500px) {
+
+  html,
+  body {
+    display: grid;
+    grid-template-columns: 300px;
+    font-size: 1em;
+  }
+
+  .search {
+    display: grid;
+    grid-template-columns: 250px 50px;
+    justify-content: center;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: 300px;
+    justify-content: center;
+  }
+}
